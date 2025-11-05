@@ -32,7 +32,7 @@ jobs:
         run: |
           newman run tw_new.json \
           -e env.json \
-          --env-var "username=${{ secrets.Postman_User }}" \
+          --env-var "admin=${{ secrets.Postman_User }}" \
           --env-var "password=${{ secrets.Postman_Password }}" \
 
             --reporters cli,htmlextra \
